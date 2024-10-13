@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #4b0082;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #dda0dd;
+}
+
+.sobre-loja {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #6a0dad;
+    color: #fff;
+}
+
+.sobre-loja .imagem-loja img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.sobre-loja .texto-loja {
+    max-width: 50%;
+}
+
+.sobre-loja h2 {
+    font-size: 1.8rem;
+}
+
+.produtos {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #4b0082;
+}
+
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 22%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.produto-item h3 {
+    font-size: 1.2rem;
+    color: #4b0082;
+}
+
+.produto-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.produto-item button {
+    padding: 10px 15px;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.produto-item button:hover {
+    background-color: #dda0dd;
+}
+
+@media (max-width: 1024px) {
+    .sobre-loja {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sobre-loja .texto-loja {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .produtos-lista {
+        flex-direction: column;
+    }
+
+    .produto-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
